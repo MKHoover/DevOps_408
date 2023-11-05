@@ -6,7 +6,7 @@ file_in="Elf_input.txt"
 
 # the value of top elf aka elf with the most food is initialized to 0
 
-top_elf='0'
+top_elf=0
 
 # the value of largest number of calories held by a given elf
 
@@ -14,7 +14,7 @@ current_max_cals=0
 
 # the current elf being evaluated
 
-current_elf='0'
+current_elf=0
 
 # the sum of calories
 
@@ -28,6 +28,9 @@ do
 		echo $line
 	else
 		echo "sum is $sum"
+		sum=0
+		((current_elf++))
+		echo "current_elf is $current_elf"
 	fi
 done < $file_in
 
