@@ -20,10 +20,15 @@ current_elf='0'
 
 sum=0
 
-while IFS='' read -r line
+while read -r line
 do
-	((sum+=$line))
-	echo $line
+	if [[ -n $line ]];
+	then
+		((sum+=$line))
+		echo $line
+	else
+		echo "sum is $sum"
+	fi
 done < $file_in
 
 echo $sum
