@@ -1,0 +1,40 @@
+1) What command will show all the docker containers running?
+
+`docker container ls`
+
+2) What command is used to locally register a file change with git?
+
+`git add` 
+
+3) What command is used get the default Vagrantfile?
+
+`vagrant init hashicorp/bionic64`
+
+4) What command would be used to create and set your working tree to a branch called question_four?
+
+`git checkout -b question_four`
+
+5) What command would you use to interact with a container named question_five via bash?
+
+`docker run -it --mount type=bind,src="$(pwd)",target=/src question_five bash`
+
+6) How would you start a compose session that was NOT logging to stdout?
+
+`docker compose up -d > /dev/null`
+
+7) Write a single line bash function that would wait for any single character of user input.
+
+`function enter_character () { read -n 1; }`
+
+8) What is an alternative to docker compose?
+
+Terraform
+
+9) What is the github mascot?
+
+octocat
+
+10) What is one of the principles of DevOps?
+Test early in the process and test often. An example would be the "Shift Left" movement that
+encourages early testing (e.g. integration testing in lower level environments or at the time code commits 
+are made), as it's more expensive to find and fix bugs later in the SLDC. 
